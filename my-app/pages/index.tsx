@@ -37,7 +37,7 @@ const Home = () => {
   const { data } = useSearchQuery(res, { enabled: !!res, refetchOnWindowFocus: false });
   return (
     <div>
-      <input type="text" placeholder="plz input" onChange={onChangeTxt} />
+      <input type="text" className="border-gray-800 border-2" placeholder="plz input" onChange={onChangeTxt} />
       <button onClick={onClickButton}>button test</button>
     </div>
   );
